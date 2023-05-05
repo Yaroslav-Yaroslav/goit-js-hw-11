@@ -42,7 +42,7 @@ function onSubmitForm(e) {
 }
 
 async function fetchImages(searchQuery, page) {
-  const url = `?key=${API_KEY}&q=${searchQuery}&image_tipe=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=40`;
+  const url = `?key=${API_KEY}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=40`;
   try {
     const { data } = await axios.get(url);
     console.log('data:', data);
